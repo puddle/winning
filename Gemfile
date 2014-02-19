@@ -1,0 +1,69 @@
+source 'https://rubygems.org'
+
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.3'
+
+# Use postgresql as the database for Active Record
+gem 'pg'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
+
+# used by Heroku for 12-factor logging
+group :production, :staging do
+  gem 'rails_12factor', '~> 0.0.2'
+end
+
+
+#####################################
+# WINNING GEMS
+
+# experiment with perpetuity as a DM solution
+gem 'perpetuity',          git: 'git://github.com/jgaskins/perpetuity.git',          ref: '82cad54d7226ad17ce25d74c751faf8f2c2c4eb2'
+gem 'perpetuity-postgres', git: 'git://github.com/jgaskins/perpetuity-postgres.git', ref: 'c167d338edc05da582ff3856e86f7fb7693df0bb'
+
+# GitHub API access!
+gem "octokit", "~> 2.0"
+
+# Take Pure for a test-drive
+gem "pure-css-rails", "~> 0.4.2"
+
+
+#####################################
+# Other options
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.1.2'
+
+# Use unicorn as the app server
+gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]

@@ -1,0 +1,36 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ * PureCSS
+ *= require pure
+
+ * My App
+ *= require_self
+ *= require_tree .
+ */
+
+.header {
+  background-color: #5eb95e;
+  margin:0px;
+  left: 0px; right: 0px; top:0px; height:60px;
+  position: relative;
+}
+.header div.brand {
+  margin: auto;
+  color: white;
+  font-size: 36px;
+  width:200px;
+  text-align: center;
+  padding-top: 5px;
+}
+.content {
+  margin: 1em 2em;
+}
