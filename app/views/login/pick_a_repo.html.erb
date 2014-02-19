@@ -1,0 +1,10 @@
+<h2>Pick a Repo</h2>
+<p>This is the repo for which you'd like to track issues.</p>
+
+<% @repos.each do |repo| %>
+
+  <div class="repo">
+    <%= link_to repo.name, pick_repo_url(repo_name:repo.full_name) %>
+  </div>
+
+<% end %>

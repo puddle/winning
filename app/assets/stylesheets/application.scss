@@ -13,9 +13,13 @@
  *= require pure
 
  * My App
- *= require_self
- *= require_tree .
  */
+
+@import 'pure';
+
+@import 'variables';
+@import 'repos';
+
 
 .header {
   background-color: #5eb95e;

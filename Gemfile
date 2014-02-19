@@ -43,9 +43,12 @@ gem 'perpetuity-postgres', git: 'git://github.com/jgaskins/perpetuity-postgres.g
 
 # GitHub API access!
 gem "octokit", "~> 2.0"
+# for Github OAuth access
+gem "oauth2", "~> 0.9.3"
 
 # Take Pure for a test-drive
 gem "pure-css-rails", "~> 0.4.2"
+
 
 
 #####################################

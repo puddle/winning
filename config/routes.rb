@@ -5,6 +5,13 @@ Winning::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'issues#index'
 
+  # login
+  get 'login/home' => 'login#home', as: 'login'
+  get 'login/github' => 'login#github_login', as: 'github_login'
+  get 'login/github/callback' => 'login#github_callback', as: 'github_callback'
+  get 'login/pick_a_repo' => 'login#pick_a_repo', as: 'pick_a_repo'
+  get 'login/pick_repo' => 'login#pick_repo', as: 'pick_repo'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

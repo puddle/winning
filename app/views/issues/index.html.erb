@@ -1,2 +1,11 @@
 <h1>Let's get Winning!</h1>
 
+<p>Repo: <%= @repo_name %></p>
+
+<h3>Issues</h3>
+
+<ul>
+  <% @issues.each do |issue| %>
+    <li><%= issue.number %> - <%= issue.title %></li>
+  <% end %>
+</ul>
